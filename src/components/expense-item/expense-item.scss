@@ -1,0 +1,86 @@
+.expense-item {
+  box-shadow: 0px 0px 10px rgb(206, 206, 206);
+  background: white;
+  border: 1px solid #5c873c;
+  border-radius: 2%; 
+  color: black;
+  width: 14em;
+  height: 10em;
+  position: relative;
+}
+
+.expense-item-container ul li {
+  display: none;
+}
+
+.expense-name {
+  display: block;
+  font-size: 18px;
+  overflow-wrap: break-word;
+  padding-top: .5em;
+}
+
+.expense-description {
+  overflow-wrap: break-word;
+  max-width: 5em;
+}
+
+.expense-category {
+  overflow-wrap: break-word;
+  max-width: 5em;
+}
+
+// .expense-description {
+//   cursor: pointer;
+//   overflow: scroll;
+//   word-wrap: break-word;
+//   height: 3em;
+//   width: 9em;
+//   margin-left: auto;
+//   margin-right: auto;
+//   position: relative;
+//   bottom: .5em;
+//   margin-bottom: -10px;
+// }
+
+.expense-list {
+ margin-top: .2em;
+ margin-left: 1em;
+ line-height: 1.5;
+}
+
+.expense-list ul {
+  overflow-y: scroll;
+  width: 7em;
+}
+
+.expense-name {
+  margin-left: .5em;
+  line-height: 1.5;
+  border-bottom: 2px solid #5c873c;
+  width: 6em;
+}
+
+.delete-button {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 5%;
+  color: #5c873c;
+  cursor: pointer;
+  font-size: 14px;
+  height: 1.5em;
+  width: 1.5em;
+  position: absolute;
+  top: 3%;
+  right: -2px;
+}
+
+.amount {
+  color: rgb(242, 152, 103);
+  font-size: 24px;
+  font-weight: 300;
+  margin-top: 1em;
+  position: absolute;
+  bottom: 2%;
+  right: 5%;
+}
