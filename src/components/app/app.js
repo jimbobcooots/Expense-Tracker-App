@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 import Dashboard from '../dashboard/dashboard';
+import AuthForm from '../auth-form/auth-form';
 
 import './app.scss';
 
@@ -17,18 +18,23 @@ export default class App extends React.Component {
                 <ul>
                   <li><Link to="/">Home</Link></li>
                   <li><Link to="/dashboard">Dashboard</Link></li>
+                  <li><Link to="/auth-form">Login/Signup</Link></li>
                 </ul>
               </nav>
             </header>
             <Route 
               exact
               path="/"
-              component={() => <h4>You must only create expenses that pertain to medieval times</h4>}
             />
             <Route 
               exact
               path="/dashboard"
               component={Dashboard}
+            />
+            <Route 
+              exact
+              path="/auth-form"
+              component={AuthForm}
             />
           </div>
         </BrowserRouter>
