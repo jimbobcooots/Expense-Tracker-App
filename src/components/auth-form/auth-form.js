@@ -13,16 +13,19 @@ export default class AuthForm extends React.Component {
     this.state = emptyState;
   }
 
-  handleChange = (event) => {
-    const { name, value } = event.target;
-    this.setState({ [name]: value });
-  }
+    handleChange = (event) => {
+      const { name, value } = event.target;
+      this.setState({ [name]: value });
+    }
 
-  handleSubmit = (event) => {
-    event.preventDefault();
-    this.props.onComplete(this.state);
-    this.setState(emptyState);
-  }
+    handleSubmit = (event) => {
+      const name = this.state.username;
+      event.preventDefault();
+      this.setState(emptyState);
+      this.setState({
+        greeting: `Hi there ${name}`, 
+      });
+    }
 
   renderEmailInput = (type) => {
     return type === 'signup' && (
@@ -50,6 +53,7 @@ export default class AuthForm extends React.Component {
         />
 
         { this.renderEmailInput(type) }
+        
 
         <input 
           name="password"
@@ -59,6 +63,7 @@ export default class AuthForm extends React.Component {
           onChange={ this.handleChange }
         />
         <button type="submit">{ type }</button>
+        { this.state.greeting ? <h2>{this.state.greeting}</h2> : null } 
       </form>
     );
   }
