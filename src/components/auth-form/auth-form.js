@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import './auth-form.scss';
+
 const emptyState = {
   username: '',
   email: '',
@@ -44,6 +46,7 @@ export default class AuthForm extends React.Component {
     type = type === 'login' ? type : 'signup';
     return (
       <form className="auth-form" onSubmit={ this.handleSubmit }>
+        <h1>Login/Signup</h1>
         <input 
           name="username"
           placeholder="username"
