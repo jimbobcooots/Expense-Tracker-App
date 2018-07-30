@@ -1,0 +1,44 @@
+.app {
+  background: black;
+  width: 100%;
+}
+
+.app header {
+  color: white;
+  position: relative;
+  text-align: center;
+  height: 8em;
+}
+
+header h1 {
+  position: relative;
+  margin-bottom: .5em;
+  top: .5em;
+}
+
+nav {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+nav > ul {
+  list-style-type: none;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav > ul > li {
+  display: inline-block;
+  margin: 20px;
+}
+
+nav > ul > li > a {
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
