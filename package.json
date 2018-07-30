@@ -8,16 +8,16 @@
   },
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "dev-start": "nodemon index.js",
+    "dev-start": "nodemon main.js",
     "test": "eslint --fix . && jest --coverage",
     "testWatch": "jest --coverage --watchAll",
     "test-nolint": "jest --coverage",
     "watch": "webpack-dev-server --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
     "lint": "eslint --fix .",
-    "start": "npm run build && node index.js"
+    "start": "npm run build && node main.js"
   },
   "keywords": [],
   "author": "",
