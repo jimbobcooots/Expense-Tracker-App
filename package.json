@@ -17,7 +17,7 @@
     "watch": "webpack-dev-server --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
     "lint": "eslint --fix .",
-    "start": "npm run build && node ../main.js"
+    "start": "npm run build && node ./src/main.js"
   },
   "keywords": [],
   "author": "",
