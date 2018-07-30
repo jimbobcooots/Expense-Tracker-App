@@ -7,6 +7,13 @@
   color: white;
   position: relative;
   text-align: center;
+  height: 8em;
+}
+
+header h1 {
+  position: relative;
+  margin-bottom: .5em;
+  top: .5em;
 }
 
 nav {
@@ -31,7 +38,7 @@ nav > ul > li {
 nav > ul > li > a {
   color: white;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 300;
   text-decoration: none;
 }
 

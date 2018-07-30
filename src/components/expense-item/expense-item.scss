@@ -1,7 +1,7 @@
 .expense-item {
-  box-shadow: 0px 0px 10px rgb(206, 206, 206);
+  box-shadow: 0px 0px 7px rgb(227, 227, 227);
   background: white;
-  border: 1px solid #5c873c;
+  border: 1px solid rgb(216, 216, 216);
   border-radius: 2%; 
   color: black;
   width: 14em;
@@ -57,7 +57,7 @@
 .expense-name {
   margin-left: .5em;
   line-height: 1.5;
-  border-bottom: 2px solid #5c873c;
+  border-bottom: 1px solid rgb(203, 203, 203);
   width: 6em;
 }
 
