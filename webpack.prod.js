@@ -2,7 +2,7 @@ const merge = require('webpack-merge');
 const MiniCssPlugin = require('mini-css-extract-plugin');
 const commonConfig = require('./webpack.common');
 
-console.log('common Config: \n!!!!!!!!!!!!!!!!!!!!\n'commonConfig);
+console.log('common Config: \n!!!!!!!!!!!!!!!!!!!!\n',commonConfig);
 
 
 const webpackProdConfig = {};
