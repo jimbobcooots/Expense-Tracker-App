@@ -1,0 +1,30 @@
+html {
+  background-color: white;
+}
+
+form {
+  background: #5c873c;
+  height: 3em;
+  margin-bottom: 1em;
+}
+
+.error {
+  background: white;
+  text-align: center;
+}
+
+form > input, button {
+  font-size: 14px;
+  position: relative;
+  top: .75em;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.expense-list li {
+  float: left;
+  list-style-type: none;
+  margin-left: .5em;
+  margin-right: .5em;
+}
+
