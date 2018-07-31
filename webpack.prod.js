@@ -24,6 +24,18 @@ webpackProdConfig.module.rules = [
       'sass-loader',
     ],
   },
+  {
+    test: /\.js$/,
+    exclude: /node_modules/,
+    use: {
+      loader: 'babel-loader',
+      options: {
+        presets: ['env', 'stage-0', 'react'],
+        plugins: ['transform-react-jsx-source', 'transform-object-rest-spread', 'transform-class-properties'],
+        cacheDirectory: true,
+      },
+    },
+  },
 ];
 console.log('NOTICE ME \n', merge(commonConfig, webpackProdConfig).module.rules[1].use.options);
 module.exports = merge(commonConfig, webpackProdConfig);
