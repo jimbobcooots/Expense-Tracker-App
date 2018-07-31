@@ -2,7 +2,7 @@ const merge = require('webpack-merge');
 const MiniCssPlugin = require('mini-css-extract-plugin');
 const commonConfig = require('./webpack.common');
 
-console.log('common Config: \n!!!!!!!!!!!!!!!!!!!!\n',commonConfig);
+console.log('common Config: \n!!!!!!!!!!!!!!!!!!!!\n', commonConfig.module.rules[1].use.options);
 
 
 const webpackProdConfig = {};
@@ -25,5 +25,5 @@ webpackProdConfig.module.rules = [
     ],
   },
 ];
-
+console.log('NOTICE ME \n', merge(commonConfig, webpackProdConfig));
 module.exports = merge(commonConfig, webpackProdConfig);
