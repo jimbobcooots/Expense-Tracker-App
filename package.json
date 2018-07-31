@@ -15,9 +15,10 @@
     "testWatch": "jest --coverage --watchAll",
     "test-nolint": "jest --coverage",
     "watch": "webpack-dev-server --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js",
     "lint": "eslint --fix .",
-    "start": "npm run build && node ./src/main.js"
+    "pack": "webpack --config webpack.prod.js",
+    "heroku-postbuild": "webpack --progress --config webpack.prod.js",
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
@@ -57,6 +58,7 @@
   },
   "dependencies": {
     "dotenv": "^6.0.0",
+    "express": "^4.16.3",
     "react-router-dom": "^4.3.1",
     "uuid": "^3.3.2"
   }
