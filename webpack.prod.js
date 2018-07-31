@@ -25,5 +25,5 @@ webpackProdConfig.module.rules = [
     ],
   },
 ];
-console.log('NOTICE ME \n', merge(commonConfig, webpackProdConfig));
+console.log('NOTICE ME \n', merge(commonConfig, webpackProdConfig).module.rules[1].use.options);
 module.exports = merge(commonConfig, webpackProdConfig);
